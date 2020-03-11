@@ -1,0 +1,16 @@
+﻿@{
+    ViewBag.Title = "Welcome to Fibanacci Page";
+}
+
+    <h1>Welcome to Fibonacci  Page</h1>
+<br />
+
+<form asp-controller="Fibonacci" method="get">
+    Enter Number : <input name="number" type="text" /> <br /><br />
+    <input type="submit" value="Get" formaction="get" /> &nbsp;&nbsp;&nbsp;
+
+</form>
+
+<h2 style="color:crimson; background-color:darksalmon; padding:10px;">
+    @ViewBag.Result
+</h2>
